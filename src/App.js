@@ -15,12 +15,11 @@ export class App extends Component {
 
     onChangeHandler = (event) => {
         event.preventDefault();
-        fetchData(event.target.value).then(fetchedData =>{
+        fetchData(event.target.value).then(fetchedData => {
             this.setState({
                 data : fetchedData,
                 country : event.target.value
             })
-            console.log(this.state);
         })
     }
 
